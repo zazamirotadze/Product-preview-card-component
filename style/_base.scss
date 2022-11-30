@@ -1,0 +1,16 @@
+@import "./variebles";
+@import "./mixins";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: $Cream;
+    font-family: 'Fraunces', serif;
+    @include respond(phone){
+        padding: 20px 0;
+    }
+}
